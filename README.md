@@ -62,9 +62,10 @@ Step 3d: Create Checkout Process within the server.js and Listen to Port 4242:
 
     app.listen(4242, () => console.log('Node server listening on port 4242!'));
 
-Step 4a: Create a folder called "public" and route within called "index.html"
+Step 4a: Create a folder called "public" and route within called "index.html", "success.html", and "cancel.html".
+populate success.html and cancel.html with "payment completed" and "payment failed"
 
-Step 4b: Use the "!" function to automatically populate the HTML
+Step 4b: Use the "!" function to automatically populate the index.html
 
 Step 4c: Add basic html for an example product like "T-shirt" when creating checkout process and add header label:
     <h1>Buy White T-shirt - $20</h1>
