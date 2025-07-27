@@ -23,16 +23,19 @@ Step 2d: Create a .env file and replace api key with your own
 Step 3a: Setup "Server.js" or "App.js" through following commands
 
 Step 3b: Require Express, the Dotenv package for the API Key, and the Stripe package:
+    
     require('dotenv').config();
     const express = require('express');
     const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 Step 3c: Use Express through:
+    
     const app = express();
     app.use(express.static('public'));
     app.use(express.json());
 
 Step 3d: Create Checkout Process within the server.js and Listen to Port 4242:
+    
     app.post('/create-checkout-session', async (req, res) => {
     try {
         const session = await stripe.checkout.sessions.create({
@@ -68,10 +71,12 @@ populate success.html and cancel.html with "payment completed" and "payment fail
 Step 4b: Use the "!" function to automatically populate the index.html
 
 Step 4c: Add basic html for an example product like "T-shirt" when creating checkout process and add header label:
+    
     <h1>Buy White T-shirt - $20</h1>
     <button id="checkout-button">Checkout</button>
 
 Step 4d: Create a script section to listen when checkout is clicked and call the create checkout session function:
+    
     <script>
         const checkoutButton = document.getElementById('checkout-button');
 
