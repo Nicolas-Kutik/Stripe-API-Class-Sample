@@ -20,8 +20,9 @@ Step 2c: Install NPM packages "npm install express dotenv stripe"
 
 Step 2d: Create a .env file and replace api key with your own
 
-Step 3a: Setup "Server.js" or "App.js" through following commands
+STRIPE_SECRET_KEY=pk_test_51RneqCB7hKIN4CRWGDyJkoEVSMIcxP0ySKco5h7CkODyOV2VCOv5OFWOXiTJOwxKdO5yM9GG13x6Ju3fko3zYrlc00zFEy2NeO
 
+Step 3a: Setup "Server.js" or "App.js" through following commands
 Step 3b: Require Express, the Dotenv package for the API Key, and the Stripe package:
     
     require('dotenv').config();
