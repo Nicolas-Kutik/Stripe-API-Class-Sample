@@ -10,8 +10,6 @@ Steps:
 
 Step 1: Create a new initial project
 
-Step 2b: Create a Stripe Account and get API Key
-
 Step 2a: Create a "Server.js" or "App.js"
 
 Step 2b: Initialize through "npm init -y"
